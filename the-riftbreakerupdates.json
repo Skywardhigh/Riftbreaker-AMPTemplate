@@ -1,5 +1,16 @@
 [
   {
+    "UpdateStageName": "SteamCMD AppInfo Warmup",
+    "UpdateSourcePlatform": "All",
+    "UpdateSource": "SteamCMD",
+    "UpdateSourceData": "4114030",
+    "UnzipUpdateSource": false,
+    "OverwriteExistingFiles": false,
+    "DeleteAfterExtract": true,
+    "OneShot": false,
+    "SkipOnFailure": true
+  },
+  {
     "UpdateStageName": "SteamCMD Download",
     "UpdateSourcePlatform": "All",
     "UpdateSource": "SteamCMD",

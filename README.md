@@ -10,7 +10,7 @@ Dedicated Server** fully headless (`cli=1`) as an AMP instance.
 
 ## What it does
 - Installs the DS via anonymous **SteamCMD** (Steam app `4114030`) — no login/second copy needed.
-- Launches headless from the install root via `DedicatedServer.bat` with `cli=1 app_mode=server server_name="..." campaign="..." ...`
+- Launches `bin\DedicatedServer.exe` directly with `cli=1 app_mode=server server_name="..." campaign="..." ...`
 - Exposes the server settings as AMP options: name, password, RCON password, max players (1–4),
   visibility, pause-when-empty, and the game mode / map / difficulty.
 

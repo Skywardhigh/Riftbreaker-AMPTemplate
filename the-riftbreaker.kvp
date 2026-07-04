@@ -22,8 +22,8 @@ App.HasWriteableConsole=false
 App.DisplayName=The Riftbreaker
 App.RootDir=./the-riftbreaker/
 App.BaseDirectory=./the-riftbreaker/4114030/
-App.WorkingDir=4114030
-App.ExecutableWin=4114030\DedicatedServer.bat
+App.WorkingDir=4114030/bin
+App.ExecutableWin=4114030\bin\DedicatedServer.exe
 App.ExecutableLinux=
 App.LinuxCommandLineArgs=
 App.CommandLineArgs=cli=1 app_mode=server headless_mode=1 disable_safe_mode=1 {{$FormattedArgs}}

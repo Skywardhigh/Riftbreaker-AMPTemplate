@@ -20,8 +20,10 @@ Dedicated Server** fully headless (`cli=1`) as an AMP instance.
 - **Survival** → a `survival/*` map + `coop_*`
 
 ## Notes
-- **No port-forwarding** in the default Steam mode — The Riftbreaker uses Steam Datagram Relay;
-  players join via the in-game server browser or the join link. Only `disable_steam=1` (LAN) uses a direct port.
+- **Networking default:** AMP defaults to `disable_steam=1` because Steam server registration can fail
+  when the DS runs under AMP's service account. In this mode, players join via LAN/direct-IP or the
+  friends-only browser path observed in testing. Steam networking can be tried by setting Disable Steam
+  Networking to **No**, but it may stop during startup with `STEAM: SteamGameServer_Init failed!`.
 - **Status** is process up/down for now. The DS can emit console logs, but startup is still marked immediate until a reliable ready regex is captured.
 - **Stop** is a process kill (autosave runs ~every 10 min; pause-when-empty protects the base).
 - **Server names with spaces** are passed quoted through AMP formatted args (`server_name="..."`) — verify on first boot.

@@ -208,24 +208,24 @@
     }
   },
   {
-    "DisplayName": "Disable Steam (LAN only)",
+    "DisplayName": "Disable Steam Networking",
     "Category": "The Riftbreaker:videogame_asset",
     "Subcategory": "Advanced:build:3",
-    "Description": "Leave as No for normal internet play using Steam networking. Set to Yes only for direct-IP LAN testing.",
+    "Description": "Use LAN/direct-IP networking. Recommended for AMP service installs; Steam server registration may fail under service accounts.",
     "Keywords": "steam,lan,disable,networking",
     "FieldName": "disable_steam",
     "InputType": "enum",
     "IsFlagArgument": false,
     "ParamFieldName": "disable_steam",
     "IncludeInCommandLine": true,
-    "DefaultValue": "0",
+    "DefaultValue": "1",
     "Placeholder": "",
     "Suffix": "",
     "Hidden": false,
     "SkipIfEmpty": false,
     "EnumValues": {
-      "0": "No (Steam networking - normal)",
-      "1": "Yes (LAN / direct IP)"
+      "1": "Yes (LAN / direct IP - recommended)",
+      "0": "No (Steam networking)"
     }
   }
 ]

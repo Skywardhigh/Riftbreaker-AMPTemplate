@@ -8,7 +8,6 @@
     "UnzipUpdateSource": false,
     "OverwriteExistingFiles": false,
     "DeleteAfterExtract": true,
-    "OneShot": false,
-    "ForceDownloadPlatform": "Windows"
+    "OneShot": false
   }
 ]

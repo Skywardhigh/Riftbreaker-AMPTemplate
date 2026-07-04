@@ -1,0 +1,181 @@
+[
+    {
+        "DisplayName": "Server Name",
+        "Category": "The Riftbreaker:videogame_asset",
+        "Subcategory": "Server Settings:dns:1",
+        "Description": "Public name shown in the in-game server browser.",
+        "Keywords": "name,servername",
+        "FieldName": "ServerName",
+        "InputType": "text",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "The Riftbreaker Server - via AMP",
+        "ParamFieldName": "server_name",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Server Password",
+        "Category": "The Riftbreaker:videogame_asset",
+        "Subcategory": "Server Settings:dns:1",
+        "Description": "Password required to join. Leave blank for an open server.",
+        "Keywords": "password",
+        "FieldName": "ServerPassword",
+        "InputType": "password",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "",
+        "ParamFieldName": "server_password",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "RCON Password",
+        "Category": "The Riftbreaker:videogame_asset",
+        "Subcategory": "Server Settings:dns:1",
+        "Description": "Enables in-game remote-console commands for connected clients. Must match on client and server. Leave blank to disable RCON.",
+        "Keywords": "rcon,password,remote",
+        "FieldName": "RconPassword",
+        "InputType": "password",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "",
+        "ParamFieldName": "server_rcon_password",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Max Players",
+        "Category": "The Riftbreaker:videogame_asset",
+        "Subcategory": "Server Settings:dns:1",
+        "Description": "Maximum players. 4 is the officially supported cap — more tanks performance hard.",
+        "Keywords": "players,slots,max",
+        "FieldName": "MaxPlayers",
+        "InputType": "enum",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "4",
+        "ParamFieldName": "server_max_players_count",
+        "EnumValues": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4 (recommended max)"
+        }
+    },
+    {
+        "DisplayName": "Visibility",
+        "Category": "The Riftbreaker:videogame_asset",
+        "Subcategory": "Server Settings:dns:1",
+        "Description": "Whether the server is listed in the in-game server browser.",
+        "Keywords": "broadcast,public,private,visible",
+        "FieldName": "Broadcast",
+        "InputType": "enum",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "1",
+        "ParamFieldName": "server_broadcast_enabled",
+        "EnumValues": {
+            "1": "Public (listed in server browser)",
+            "0": "Private (join link / password only)"
+        }
+    },
+    {
+        "DisplayName": "Pause When Empty",
+        "Category": "The Riftbreaker:videogame_asset",
+        "Subcategory": "Server Settings:dns:1",
+        "Description": "Pauses world simulation when nobody is connected, so your base can't be destroyed while you're away.",
+        "Keywords": "pause,empty,afk",
+        "FieldName": "PauseWhenEmpty",
+        "InputType": "enum",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "1",
+        "ParamFieldName": "server_pause_game_when_empty",
+        "EnumValues": {
+            "1": "Yes (recommended)",
+            "0": "No"
+        }
+    },
+    {
+        "DisplayName": "Game Mode",
+        "Category": "The Riftbreaker:videogame_asset",
+        "Subcategory": "Game Settings:sports_esports:2",
+        "Description": "Which mode to host. Story Campaign always starts in the Tropical zone (leave Map set to the Story option).",
+        "Keywords": "campaign,mode,gametype",
+        "FieldName": "Campaign",
+        "InputType": "enum",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "open/open",
+        "ParamFieldName": "campaign",
+        "EnumValues": {
+            "open/open": "Open Campaign",
+            "mp_story/mp_story": "Story Campaign (co-op)",
+            "mp_survival/mp_survival": "Survival"
+        }
+    },
+    {
+        "DisplayName": "Map / Starting Biome",
+        "Category": "The Riftbreaker:videogame_asset",
+        "Subcategory": "Game Settings:sports_esports:2",
+        "Description": "Required for Open Campaign and Survival. Must match your chosen Game Mode. For STORY campaign, pick the '(Story — leave as this)' option.",
+        "Keywords": "map,mission,biome,starting",
+        "FieldName": "Mission",
+        "InputType": "enum",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "campaigns/open/headquarters_desert",
+        "ParamFieldName": "mission",
+        "EnumValues": {
+            "campaigns/open/headquarters_desert": "Open: Radioactive Desert",
+            "campaigns/open/headquarters_jungle": "Open: Jungle",
+            "campaigns/open/headquarters_metallic": "Open: Metallic Valley",
+            "campaigns/open/headquarters_acid": "Open: Acid Plains",
+            "campaigns/open/headquarters_ice": "Open: Ice Fields",
+            "campaigns/open/headquarters_swamp": "Open: Swamp",
+            "campaigns/open/headquarters_caverns": "Open: Caverns",
+            "survival/jungle": "Survival: Jungle",
+            "survival/acid": "Survival: Acid",
+            "survival/desert": "Survival: Desert",
+            "survival/magma": "Survival: Magma",
+            "survival/ice": "Survival: Ice",
+            "survival/metallic": "Survival: Metallic",
+            "survival/caverns": "Survival: Caverns",
+            "survival/swamp": "Survival: Swamp",
+            "survival/swamp_lakes": "Survival: Swamp Lakes",
+            "": "(Story — leave as this for Story Campaign)"
+        }
+    },
+    {
+        "DisplayName": "Difficulty",
+        "Category": "The Riftbreaker:videogame_asset",
+        "Subcategory": "Game Settings:sports_esports:2",
+        "Description": "Must match your Game Mode: use the 'Open:' values for Open Campaign, 'Story:' for Story, 'Survival:' for Survival.",
+        "Keywords": "difficulty,level",
+        "FieldName": "Difficulty",
+        "InputType": "enum",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "normal",
+        "ParamFieldName": "difficulty",
+        "EnumValues": {
+            "easy": "Open: Easy",
+            "normal": "Open: Normal",
+            "hard": "Open: Hard",
+            "brutal": "Open: Brutal",
+            "coop_campaign_easy": "Story: Easy",
+            "coop_campaign_normal": "Story: Normal",
+            "coop_campaign_hard": "Story: Hard",
+            "coop_campaign_brutal": "Story: Brutal",
+            "coop_easy": "Survival: Easy",
+            "coop_normal": "Survival: Normal",
+            "coop_hard": "Survival: Hard",
+            "coop_brutal": "Survival: Brutal"
+        }
+    },
+    {
+        "DisplayName": "Disable Steam (LAN only)",
+        "Category": "The Riftbreaker:videogame_asset",
+        "Subcategory": "Advanced:build:3",
+        "Description": "Leave as No for normal internet play (Steam networking / join link). Set to Yes only for a direct-IP LAN server.",
+        "Keywords": "steam,lan,disable,networking",
+        "FieldName": "DisableSteam",
+        "InputType": "enum",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "0",
+        "ParamFieldName": "disable_steam",
+        "EnumValues": {
+            "0": "No (Steam networking — normal)",
+            "1": "Yes (LAN / direct IP)"
+        }
+    }
+]

@@ -1,0 +1,9 @@
+[
+    {
+        "Protocol": "UDP",
+        "Port": 27015,
+        "Ref": "ApplicationPort1",
+        "Name": "Steam / Game Port",
+        "Description": "The Riftbreaker uses Steam networking (Steam Datagram Relay), so port-forwarding is usually NOT required — players join via the in-game server browser or the join link. This nominal port only matters if you set 'Disable Steam (LAN only)' to Yes."
+    }
+]

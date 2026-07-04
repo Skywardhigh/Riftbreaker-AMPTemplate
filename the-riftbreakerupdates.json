@@ -1,13 +1,5 @@
 [
   {
-    "UpdateStageName": "SteamCMD Client Warmup",
-    "UpdateSourcePlatform": "Windows",
-    "UpdateSource": "Executable",
-    "UpdateSourceData": "cmd.exe",
-    "UpdateSourceArgs": "/C \"\"{{$FullRootDir}}steamcmd.exe\" +login anonymous +quit\"",
-    "SkipOnFailure": true
-  },
-  {
     "UpdateStageName": "SteamCMD Download",
     "UpdateSourcePlatform": "All",
     "UpdateSource": "SteamCMD",

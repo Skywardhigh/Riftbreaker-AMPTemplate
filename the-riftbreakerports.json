@@ -1,0 +1,16 @@
+[
+  {
+    "Protocol": "Both",
+    "Port": "27015",
+    "Name": "Steam Query Port",
+    "Description": "Nominal Steam networking/query port. The Riftbreaker normally uses Steam Datagram Relay, so forwarding is usually not required.",
+    "Ref": "SteamQueryPort"
+  },
+  {
+    "Protocol": "Both",
+    "Port": "6321",
+    "Name": "Main Game Port",
+    "Description": "Nominal direct/LAN game port; only expected to matter when disable_steam is enabled.",
+    "Ref": "MainGamePort"
+  }
+]

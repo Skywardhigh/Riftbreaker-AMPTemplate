@@ -22,7 +22,7 @@ Dedicated Server** fully headless (`cli=1`) as an AMP instance.
 ## Notes
 - **No port-forwarding** in the default Steam mode — The Riftbreaker uses Steam Datagram Relay;
   players join via the in-game server browser or the join link. Only `disable_steam=1` (LAN) uses a direct port.
-- **Status** is process up/down (the DS logs to `Documents\The Riftbreaker\exor_logs.txt`, not stdout).
+- **Status** is process up/down for now. The DS can emit console logs, but startup is still marked immediate until a reliable ready regex is captured.
 - **Stop** is a process kill (autosave runs ~every 10 min; pause-when-empty protects the base).
 - **Server names with spaces** are passed quoted through AMP formatted args (`server_name="..."`) — verify on first boot.
 

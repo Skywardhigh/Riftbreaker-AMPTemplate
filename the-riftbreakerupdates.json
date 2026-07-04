@@ -1,13 +1,10 @@
 [
   {
-    "UpdateStageName": "SteamCMD AppInfo Warmup",
-    "UpdateSourcePlatform": "All",
-    "UpdateSource": "SteamCMD",
-    "UpdateSourceData": "4114030",
-    "UnzipUpdateSource": false,
-    "OverwriteExistingFiles": false,
-    "DeleteAfterExtract": true,
-    "OneShot": false,
+    "UpdateStageName": "SteamCMD Client Warmup",
+    "UpdateSourcePlatform": "Windows",
+    "UpdateSource": "Executable",
+    "UpdateSourceData": "cmd.exe",
+    "UpdateSourceArgs": "/C \"\"{{$FullRootDir}}steamcmd.exe\" +login anonymous +quit\"",
     "SkipOnFailure": true
   },
   {
